@@ -103,14 +103,14 @@
 	<!-- End Footer Copyleft Bg -->
 	<!-- End Footer -->
 
-	<script type="text/javascript" src="javascripts/vendor/jquery.js">
+	<script type="text/javascript" src="public/defualt/javascripts/vendor/jquery.js">
 	</script>
-	<script src="javascripts/foundation/foundation.js"></script>
+	<script src="public/defualt/javascripts/foundation/foundation.js"></script>
 
-	<script type="text/javascript" src="javascripts/nexx.js"></script>
+	<script type="text/javascript" src="public/defualt/javascripts/nexx.js"></script>
 
 	<!-- FlexSlider -->
-	<script type="text/javascript" src="javascripts/vendor/jquery.flexslider-min.js"></script>
+	<script type="text/javascript" src="public/defualt/javascripts/vendor/jquery.flexslider-min.js"></script>
 	<script type="text/javascript">
 		// Main Slider
 		var $ = jQuery.noConflict();
@@ -122,7 +122,7 @@
 	</script>
 
 	<!-- Jquery Selectric (Custom Selecbox Styling ) -->
-	<script type="text/javascript" src="javascripts/jquery.selectric.js"></script>
+	<script type="text/javascript" src="public/defualt/javascripts/jquery.selectric.js"></script>
 	<script type="text/javascript">
 		$(function() {
 			$('select')
@@ -130,10 +130,10 @@
 		});
 	</script>
 	<!-- Owl Carousel -->
-	<script src="owl-carousel/owl.carousel.min.js"></script>
+	<script src="public/defualt/owl-carousel/owl.carousel.min.js"></script>
 
 	<!--  Image Zoom Plugin -->
-	<script src="javascripts/zoomsl-3.0.min.js"></script>
+	<script src="public/defualt/javascripts/zoomsl-3.0.min.js"></script>
 	<script>
 		jQuery(function() {
 

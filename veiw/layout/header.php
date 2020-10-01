@@ -10,24 +10,24 @@
     <title>سایت فروشگاهی</title>
 
     <!-- app.css if the Grid file (Contains grid style only) -->
-    <link rel="stylesheet" type="text/css" href="stylesheets/app.css" />
+    <link rel="stylesheet" type="text/css" href="public/defualt/stylesheets/app.css" />
     <!-- Droid Sans From Google -->
     <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css' />
     <!-- Main stylesheet -->
-    <link rel="stylesheet" type="text/css" href="stylesheets/base.css" />
+    <link rel="stylesheet" type="text/css" href="public/defualt/stylesheets/base.css" />
     <!-- Icon Font (icomoon.io) -->
-    <link rel="stylesheet" type="text/css" href="fonts/style.css" />
+    <link rel="stylesheet" type="text/css" href="public/defualt/fonts/style.css" />
     <!-- CSS3 Animation Lib -->
-    <link rel="stylesheet" type="text/css" href="stylesheets/animations.css" />
+    <link rel="stylesheet" type="text/css" href="public/defualt/stylesheets/animations.css" />
     <!-- Flexslider -->
-    <link rel="stylesheet" type="text/css" href="stylesheets/slider.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="public/defualt/stylesheets/slider.css" media="all" />
     <!-- Jquery Selectric -->
-    <link rel="stylesheet" type="text/css" href="stylesheets/selectric.css" />
+    <link rel="stylesheet" type="text/css" href="public/defualt/stylesheets/selectric.css" />
     <!-- Owl Carousel Assets -->
-    <link href="owl-carousel/owl.carousel.css" rel="stylesheet" />
-    <link href="owl-carousel/owl.theme.css" rel="stylesheet" />
+    <link href="public/defualt/owl-carousel/owl.carousel.css" rel="stylesheet" />
+    <link href="public/defualt/owl-carousel/owl.theme.css" rel="stylesheet" />
 
-    <script src="javascripts/vendor/custom.modernizr.js"></script>
+    <script src="public/defualt/javascripts/vendor/custom.modernizr.js"></script>
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
@@ -88,7 +88,7 @@
 
                             <!-- Thumb -->
                             <div class="cart-item-thumb right">
-                                <img src="img/cart/1.jpg" alt="Cart product 1" />
+                                <img src="public/defualt/img/cart/1.jpg" alt="Cart product 1" />
                             </div>
                             <!-- End thumb -->
 
@@ -127,7 +127,7 @@
 
                             <!-- Thumb -->
                             <div class="cart-item-thumb right">
-                                <img src="img/cart/1.jpg" alt="Cart product 1" />
+                                <img src="public/defualt/img/cart/1.jpg" alt="Cart product 1" />
                             </div>
                             <!-- End thumb -->
 
@@ -190,7 +190,7 @@
 
                 <!-- Logo -->
                 <div class="small-12 medium-3 large-2 small-centered large-uncentered text-center logo columns">
-                    <a href="index.html" title="nexx Homepage"><img src="img/logo.png" alt="Nexx Store" /></a>
+                    <a href="index.html" title="nexx Homepage"><img src="public/defualt/img/logo.png" alt="Nexx Store" /></a>
                 </div>
                 <!-- End Logo -->
                 <!-- Menu Icon For Mobile -->
@@ -258,8 +258,7 @@
                 <!-- Searchbox -->
                 <div class="small-12 medium-12 large-3 searchinputholder columns">
 
-                    <input type="text" class="searchinput" placeholder="
-محصولات جستجو" />
+                    <input type="text" class="searchinput" placeholder="محصولات جستجو" />
 
                 </div>
                 <!-- End Searchbox -->

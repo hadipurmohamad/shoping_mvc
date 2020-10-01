@@ -19,5 +19,5 @@ if (file_exists("controler/C$controler.php")) {
 
 
 <?php
-require "veiw/layout/header.php";
+require "veiw/layout/footer.php";
 ?>
