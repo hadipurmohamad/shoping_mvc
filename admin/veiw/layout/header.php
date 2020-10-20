@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<?php ob_start(); ?>
 <html lang="en">
 
 <head>
@@ -9,7 +9,7 @@
     <meta name="keyword" content="FlatLab, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
     <link rel="shortcut icon" href="../public/admin/img/favicon.html">
 
-    <title>FlatLab - Flat & Responsive Bootstrap Admin Template</title>
+    <title>پنل مدیریت</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../public/admin/css/bootstrap.min.css" rel="stylesheet">
@@ -21,7 +21,7 @@
     <!-- Custom styles for this template -->
     <link href="../public/admin/css/style.css" rel="stylesheet">
     <link href="../public/admin/css/style-responsive.css" rel="stylesheet" />
-
+    <link rel="stylesheet" href="../public/admin/css/stylepaint.css" type="text/css">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
     <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
@@ -139,7 +139,7 @@
                             </li>
                             <li>
                                 <a href="#">
-                                    <span class="photo"><img alt="avatar" src="img/avatar-mini.jpg"></span>
+                                    <span class="photo"><img alt="avatar" src="../public/admin/img/avatar-mini.jpg"></span>
                                     <span class="subject">
                                         <span class="from">سجاد باقرزاده</span>
                                         <span class="time">همین حالا</span>
@@ -151,7 +151,7 @@
                             </li>
                             <li>
                                 <a href="#">
-                                    <span class="photo"><img alt="avatar" src="img/avatar-mini2.jpg"></span>
+                                    <span class="photo"><img alt="avatar" src="../public/admin/img/avatar-mini2.jpg"></span>
                                     <span class="subject">
                                         <span class="from">ایمان مدائنی</span>
                                         <span class="time">10 دقیقه قبل</span>
@@ -163,7 +163,7 @@
                             </li>
                             <li>
                                 <a href="#">
-                                    <span class="photo"><img alt="avatar" src="img/avatar-mini3.jpg"></span>
+                                    <span class="photo"><img alt="avatar" src="../public/admin/img/avatar-mini3.jpg"></span>
                                     <span class="subject">
                                         <span class="from">صبا ذاکر</span>
                                         <span class="time">3 ساعت قبل</span>
@@ -175,7 +175,7 @@
                             </li>
                             <li>
                                 <a href="#">
-                                    <span class="photo"><img alt="avatar" src="img/avatar-mini4.jpg"></span>
+                                    <span class="photo"><img alt="avatar" src="../public/admin/img/avatar-mini4.jpg"></span>
                                     <span class="subject">
                                         <span class="from">مسعود شریفی</span>
                                         <span class="time">همین حالا</span>
@@ -256,8 +256,8 @@
                     <!-- user login dropdown start-->
                     <li class="dropdown">
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                            <img alt="" src="img/avatar1_small.jpg">
-                            <span class="username">سجاد باقرزاده</span>
+                            <img alt="" src="../public/admin/img/avatar1_small.jpg">
+                            <span class="username">هادی پورمحمد</span>
                             <b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu extended logout">
@@ -280,7 +280,7 @@
                 <!-- sidebar menu start-->
                 <ul class="sidebar-menu">
                     <li class="active">
-                        <a class="" href="index.html">
+                        <a class="" href="index.php?c=index">
                             <i class="icon-dashboard"></i>
                             <span>صفحه اصلی</span>
                         </a>
@@ -288,21 +288,28 @@
                     <li class="sub-menu">
                         <a href="javascript:;" class="">
                             <i class="icon-book"></i>
-                            <span>منو سطح 1</span>
+                            <span>مستندات</span>
                             <span class="arrow"></span>
                         </a>
                         <ul class="sub">
-                            <li><a class="" href="general.html">منو سطح دوم</a></li>
+                            <li><a class="" href="index.php?c=paint">ثبت سوابق</a></li>
+                            <li><a class="" href="index.php?c=show">نمایش سوابق</a></li>
                         </ul>
+
+
                     </li>
-                    <li>
-                        <a class="" href="login.html">
-                            <i class="icon-user"></i>
-                            <span>صفحه ورود به سایت</span>
+                    <li class="sub-menu">
+                        <a href="javascript:;" class="">
+                            <i class="icon-book"></i>
+                            <span>دسته بندی</span>
+                            <span class="arrow"></span>
                         </a>
+                        <ul class="sub">
+                            <li><a class="" href="index.php?c=procat&a=add">ثبت دسته بندی</a></li>
+                            <li><a class="" href="index.php?c=procat&a=show">نمایش دسته بندی</a></li>
+                        </ul>
                     </li>
                 </ul>
                 <!-- sidebar menu end-->
             </div>
         </aside>
-        

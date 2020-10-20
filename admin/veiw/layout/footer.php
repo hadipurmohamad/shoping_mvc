@@ -8,7 +8,8 @@
  <script src="../public/admin/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.js"></script>
  <script src="../public/admin/js/owl.carousel.js"></script>
  <script src="../public/admin/js/jquery.customSelect.min.js"></script>
-
+ <script src="../public/admin/js/my-js.js"></script>
+ <script src="../public/admin/js/upload.js"></script>
  <!--common script for all pages-->
  <script src="../public/admin/js/common-scripts.js"></script>
 

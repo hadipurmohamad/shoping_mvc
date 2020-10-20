@@ -19,7 +19,8 @@
     <!-- Custom styles for this template -->
     <link href="../../public/admin/css/style.css" rel="stylesheet">
     <link href="../../public/admin/css/style-responsive.css" rel="stylesheet" />
-
+    <script src="../../public/admin/js/titanic.min.js"></script>
+    <script src="../../public/admin/js/bodymovin.min.js"></script>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
@@ -30,11 +31,11 @@
 <body class="login-body">
 
     <div class="container">
-        <img src="../../public/admin/img/lock4.png" width="150" height="150" alt="" class="academyitLogo" />
+        <!-- <img src="../../public/admin/img/lock4.png" width="150" height="150" alt="" class="academyitLogo" /> -->
 
-        
+   <div style="with:200px;height:200px" class="titanic titanic-unlock"></div>
         <form class="form-signin" action="../controler/Clogin.php" method="post">
-        <h2 class="form-signin-heading">همین حالا وارد شوید</h2>
+            <h2 class="form-signin-heading">همین حالا وارد شوید</h2>
             <div class="login-wrap">
                 <input type="text" class="form-control" placeholder="نام کاربری" name="frm[name]" autofocus>
                 <input type="password" class="form-control" name="frm[password]" placeholder="کلمه عبور">
@@ -49,7 +50,9 @@
 
     </div>
 
-
+    <script>
+        var titanic = new Titanic('https://rawgit.com/icons8/titanic/master/src/icons/');
+    </script>
 </body>
 
 </html>
