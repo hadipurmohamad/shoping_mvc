@@ -5,6 +5,7 @@ if (!isset($_SESSION['admin_login'])) {
 }
 require "../public/include/config.php";
 require "veiw/layout/header.php";
+require_once "model/Mindex.php";
 ?>
 <?php
 $controler = @$_GET['c'] ? $_GET['c'] : 'index';

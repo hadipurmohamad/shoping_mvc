@@ -1,4 +1,6 @@
 <?php
+require_once "admin/model/Mindex.php";
+require "controler/Cpro.php";
 require "veiw/layout/header.php";
 ?>
 <?php

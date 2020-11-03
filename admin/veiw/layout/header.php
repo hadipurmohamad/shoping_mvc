@@ -1,10 +1,11 @@
 ﻿<?php ob_start(); ?>
-<html lang="en">
+<html lang="fa">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
+    <META http-equiv="Content-Type" content="text/html;CHARSET=UTF-8">
     <meta name="author" content="Mosaddek">
     <meta name="keyword" content="FlatLab, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
     <link rel="shortcut icon" href="../public/admin/img/favicon.html">
@@ -307,6 +308,17 @@
                         <ul class="sub">
                             <li><a class="" href="index.php?c=procat&a=add">ثبت دسته بندی</a></li>
                             <li><a class="" href="index.php?c=procat&a=show">نمایش دسته بندی</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="javascript:;" class="">
+                            <i class="icon-product"></i>
+                            <span>محصولات</span>
+                            <span class="arrow"></span>
+                        </a>
+                        <ul class="sub">
+                            <li><a class="" href="index.php?c=pro&a=added">ثبت محصولات</a></li>
+                            <li><a class="" href="index.php?c=pro&a=show">نمایش محصولات</a></li>
                         </ul>
                     </li>
                 </ul>
