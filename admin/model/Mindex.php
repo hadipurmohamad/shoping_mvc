@@ -1,5 +1,7 @@
 <?php
 class main{
+
+    
     public function uploder($file,$dir){
         $file_name=$file['name'];
         $file_tmp_dir=$file['tmp_name'];

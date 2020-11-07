@@ -4,7 +4,7 @@ include_once "admin/model/Mpro.php";
 if ($_GET['a']) {
     $a = $_GET['a'];
     switch ($a) {
-        case "details":
+        case "add":
          $product=new pro();
          if (isset($_GET['procat_id'])) {
              $procatId= $_GET['procat_id'];

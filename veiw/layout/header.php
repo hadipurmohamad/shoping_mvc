@@ -1,3 +1,4 @@
+<?php ob_start(); ?>
 <!DOCTYPE html>
 <!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
 <!--[if gt IE 8]><!-->
@@ -44,8 +45,14 @@
 
                 <!-- Welcome Txt -->
                 <div class="small-12 medium-5 large-5 welcome-guest-text columns">
-                    کاربر مهمان خوش آمدید
-                </div>
+                    <?php if (isset($_SESSION['user_name'])) {
+                       echo "عزیز".$_SESSION['user_name']."سلام";
+                    }else
+                    {
+                        echo "سلام کاربر میهمان";
+                    }
+                    ?>
+            </div>
                 <!-- End Welcome Txt -->
                 <!-- Currency -->
                 <div class="small-8 text-center small-centered large-uncentered medium-uncentered large-2 large-offset-1 medium-2 columns">
@@ -190,7 +197,7 @@
 
                 <!-- Logo -->
                 <div class="small-12 medium-3 large-2 small-centered large-uncentered text-center logo columns">
-                    <a href="index.html" title="nexx Homepage"><img src="public/defualt/img/logo.png" alt="Nexx Store" /></a>
+                    <a href="index.php" title="nexx Homepage"><img src="public/defualt/img/logo.png" alt="Nexx Store" /></a>
                 </div>
                 <!-- End Logo -->
                 <!-- Menu Icon For Mobile -->
@@ -241,9 +248,9 @@
                 <!-- Sub Navigation -->
                 <div class="subnavigation">
                     <ul class="subnav">
-                        <li><a href="#">
+                        <li><a href="index.php?c=user&a=register">
                                 ثبت نام</a></li>
-                        <li><a href="#">ورود به صفحه</a></li>
+                        <li><a href="index.php?c=user&a=login">ورود </a></li>
                         <li><a href="#">علاقه مندی ها (10)</a></li>
                         <li><a href="#">
                                 حساب من</a></li>
