@@ -38,67 +38,6 @@
 		<div class="lft-module-heading">
             لورم ایپسوم 
 		</div>
-		<!-- Listings -->
-		<!-- <div class="bst-seller-list">
-			<div class="bst-seller-thumb">
-				<img src="img/cart/1.jpg" alt="thumbnail1" />
-			</div>
-			<div class="bst-seller-content">
-                <div class="bst-seller-title">
-                    <a href="#" title="turtle neck">
-                        لورم ایپسوم یا طرح‌نما
-                    </a>
-                </div>
-				<div class="bst-seller-price">$78.00</div>
-				<div class="bst-seller-cart">
-                    <a href="#" title="Add to cart"><i class="icon-cart"></i>اضافه به سبد خرید</a>
-				</div>
-			</div>
-
-			<div class="clearing"></div>
-		</div>
-
-        <div class="bst-seller-list">
-            <div class="bst-seller-thumb">
-                <img src="img/cart/1.jpg" alt="thumbnail1" />
-            </div>
-            <div class="bst-seller-content">
-                <div class="bst-seller-title">
-                    <a href="#" title="turtle neck">
-                        لورم ایپسوم یا طرح‌نما
-                    </a>
-                </div>
-                <div class="bst-seller-price">$78.00</div>
-                <div class="bst-seller-cart">
-                    <a href="#" title="Add to cart"><i class="icon-cart"></i>اضافه به سبد خرید/a>
-                </div>
-            </div>
-            <div class="clearing"></div>
-        </div>
-
-        <div class="bst-seller-list">
-            <div class="bst-seller-thumb">
-                <img src="img/cart/1.jpg" alt="thumbnail1" />
-            </div>
-            <div class="bst-seller-content">
-                <div class="bst-seller-title">
-                    <a href="#" title="turtle neck">
-                        لورم ایپسوم یا طرح‌نما
-                    </a>
-                </div>
-                <div class="bst-seller-price">$78.00</div>
-                <div class="bst-seller-cart">
-                    <a href="#" title="Add to cart"><i class="icon-cart"></i>اضافه به سبد خرید/a>
-                </div>
-            </div>
-            <div class="clearing"></div>
-        </div> -->
-		<!-- Ennd Bestseller Module -->
-
-		<!-- ADVERTISEMENT -->
-		<!-- <div class="right-ad text-center">
-			<img src="img/ads/product-list.jpg" alt="Advertisement" />
-		</div> -->
 	</div>
 	<!-- End Widget Right -->
 
@@ -189,7 +128,7 @@
 		<!-- AddtoCart Buttons -->
 		<div class="f-product-hover text-right">
 			<div class="f-button">
-				<a href="#" title="Add to Cart"><i class="icon-cart"></i></a>
+				<a href="index.php?c=bascket&a=add&add_id=<?php echo $value['id'];  ?>" title="Add to Cart"><i class="icon-cart"></i></a>
 				<a href="#" title="Add to Wishlist"><i class="icon-heart"></i></a>
 				<a href="#" title="Add to Compare"><i class="icon-tags"></i></a>
 			</div>

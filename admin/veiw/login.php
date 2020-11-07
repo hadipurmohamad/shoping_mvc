@@ -33,7 +33,7 @@
     <div class="container">
         <!-- <img src="../../public/admin/img/lock4.png" width="150" height="150" alt="" class="academyitLogo" /> -->
 
-   <div style="with:200px;height:200px" class="titanic titanic-unlock"></div>
+   <div style="width:200px;height:200px" class="titanic titanic-unlock"></div>
         <form class="form-signin" action="../controler/Clogin.php" method="post">
             <h2 class="form-signin-heading">همین حالا وارد شوید</h2>
             <div class="login-wrap">

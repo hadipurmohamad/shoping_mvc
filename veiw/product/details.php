@@ -110,7 +110,7 @@
         <!-- Add To Cart -->
         <div class="small-12 small-centered medium-7 medium-uncentered large-6 large-uncentered q-lineheight cart-area columns">
 
-            <div class="continue-button"><a href="#" title="Add to cart"><i class="icon-cart"></i>
+            <div class="continue-button"><a href="index.php?c=bascket&a=add&add_id=<?php echo $procatDetial['id'];  ?>" title="Add to cart"><i class="icon-cart"></i>
                     اضافه کردن به سبد</a></div>
 
         </div>

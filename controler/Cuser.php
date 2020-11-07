@@ -8,11 +8,12 @@ if ($_GET['a']) {
             if (isset($_POST['frm'])) {
                 $userData = $_POST['frm'];
                 $userLogin = $user->user_search($userData);
-       
                 if ($userLogin) {
                     $_SESSION['user_name'] = $userData['name'];
                     $_SESSION['user_id'] = $userLogin['id'];
                     header("location:index.php");
+                }else {
+                    header("location:index.php?c=user&a=login&p=error");
                 }
             }
             break;

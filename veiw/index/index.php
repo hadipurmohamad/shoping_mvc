@@ -137,7 +137,7 @@
             <!-- AddtoCart Buttons -->
             <div class="f-product-hover">
                 <div class="f-button">
-                    <a href="#"><i class="icon-cart"></i></a>
+                    <a href="index.php?c=bascket&a=add&add_id= <?php echo  $value['id']; ?>"><i class="icon-cart"></i></a>
                     <a href="#"><i class="icon-heart"></i></a>
                     <a href="#"><i class="icon-tags"></i></a>
                 </div>

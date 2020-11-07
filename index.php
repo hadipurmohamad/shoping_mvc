@@ -1,6 +1,7 @@
 <?php
 require "public/include/config.php";
 require_once "admin/model/Mindex.php";
+include_once "admin/model/Mbascket.php";
 require "controler/Cpro.php";
 require "veiw/layout/header.php";
 ?>

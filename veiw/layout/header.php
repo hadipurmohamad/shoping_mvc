@@ -71,112 +71,76 @@
 
                     <!-- Topcart Text -->
                     <div class="topcart-text">
-
-                        سبد خرید (3 مورد)
+                        سبد خرید (<?php 
+               if (isset($_SESSION['user_id'])) 
+            {
+                $user_id= $_SESSION['user_id'];
+                $bascket = new bascket();
+                $bascketList=$bascket->bascket_cart_search($user_id);
+                echo  count($bascketList);
+           
+            } ?>)
                     </div>
                     <!-- End Topcart Text -->
-
                     <!-- Topcart Arrow Down -->
                     <div class="topcart-arrow-down">
                         <a href="#">
                             <i class="icon-arrow-down"></i>
-
                         </a>
-
-
                     </div>
                     <!-- End Topcart Arrow Down -->
 
                     <!-- Cart items -->
                     <div class="small-12 medium-12 large-4 cart-dropdown">
-
-                        <!-- Item List -->
+                     <?php foreach ($bascketList as $key => $value):?>   <!-- Item List -->
                         <div class="cart-item-list">
-
                             <!-- Thumb -->
                             <div class="cart-item-thumb right">
-                                <img src="public/defualt/img/cart/1.jpg" alt="Cart product 1" />
+                                <img style="width:90px;height:90px;" src="admin/temp_image/<?php echo $value['image1'];?> " alt="Cart product 1" />
                             </div>
                             <!-- End thumb -->
-
                             <!-- Content -->
                             <div class="cart-item-content">
                                 <!-- {product name} -->
                                 <div class="cart-item-title">
-                                    <a href="#">
-
-                                        لورم ایپسوم یا طرح‌نما</a>
+                                    <a href="index.php?c=product&a=details&procat_id=<?php echo $value['product_id'];?>">
+                                        <?php echo $value['tittle'];?>
+                                     </a>
                                 </div>
                                 <!-- PRice -->
                                 <div class="cart-item-price">
-                                    $109.00
+                                    $<?php echo number_format($value['price']);?>
                                 </div>
                                 <!-- Remove -->
-                                <a href="#" class="cart-remove">X</a>
                                 <!-- Quanitity -->
                                 <div class="cart-item-quantity">
-
                                     تعداد: (1)
                                 </div>
-
-
-
                             </div>
+                            <br>
+                            <br>
+                            <br>
+                            <a href="index.php?c=bascket&a=delete&delete_id=<?php echo $value['id'];?>" class="cart-remove">X</a>
                             <!-- End Content -->
 
                             <!-- Clearing -->
                             <div class="clearing"></div>
 
                         </div>
-                        <!-- End item list -->
-                        <!-- Item List -->
-                        <div class="cart-item-list">
+                     <?php endforeach; ?>
 
-                            <!-- Thumb -->
-                            <div class="cart-item-thumb right">
-                                <img src="public/defualt/img/cart/1.jpg" alt="Cart product 1" />
-                            </div>
-                            <!-- End thumb -->
-
-                            <!-- Content -->
-                            <div class="cart-item-content">
-                                <!-- {product name} -->
-                                <div class="cart-item-title">
-                                    <a href="#">
-
-                                        لورم ایپسوم یا طرح‌نما</a>
-                                </div>
-                                <!-- PRice -->
-                                <div class="cart-item-price">
-                                    $109.00
-                                </div>
-                                <!-- Remove -->
-                                <a href="#" class="cart-remove">X</a>
-                                <!-- Quanitity -->
-                                <div class="cart-item-quantity">
-
-                                    تعداد: (1)
-                                </div>
-
-
-
-                            </div>
-                            <!-- End Content -->
-
-                            <!-- Clearing -->
-                            <div class="clearing"></div>
-
-                        </div>
-                        <!-- End item list -->
-
-                        <!-- Total -->
                         <div class="small-12 large-12 text-center medium-12 columns cart-total">
-
-                            مجموع: 124.00 $
+                            مجموع:<?php 
+                                 $total=0;
+                                 foreach ($bascketList as $key => $value) {
+                                 $total+=$value['price'];
+                               }
+                                    echo number_format($total);
+                                  ?> $
 
                         </div>
-                        <button class="small-12 large-12 btn btn-3 btn-3a icon-arrow-left">
-                            سبد خرید</button>
+                        <a href="index.php?c=bascket&a=list" class="small-12 large-12 btn btn-3 btn-3a icon-arrow-left">
+                            سبد خرید</a>
                         <button class="small-12 large-12 btn btn-3 btn-3a icon-lock">بررسی</button>
 
                     </div>
@@ -209,7 +173,7 @@
                 <div class="small-12 medium-12 large-7 mainnav columns">
 
                     <ul class="navigation">
-                        <li><a href="home.html">صفحه اصلی</a></li>
+                        <li><a href="index.php">صفحه اصلی</a></li>
                         <?php foreach ($res as $key => $value) : ?>
 
                             <li>

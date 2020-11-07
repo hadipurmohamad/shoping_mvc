@@ -1,6 +1,6 @@
 <?php
 
-class pro extends main
+class bascket extends main
 {
     public function __construct()
     {
@@ -14,81 +14,31 @@ class pro extends main
          VALUES ('$user_id','$product_id', 0)");
         return $resualt;
     }
-    public function pro_listBycat_id($cat_id, $id)
+    public function bascket_cart_search($user_id)
     {
         $this->db->exec("SET CHARACTER SET UTF8");
-        $resualt = $this->db->query("SELECT * FROM `product` WHERE cat_id =$cat_id and id!=$id");
+        $resualt = $this->db->query("SELECT * FROM `product`, `bascket_cart` WHERE bascket_cart.product_id=product.id AND user_id =$user_id ");
         $res = $resualt->fetchall(PDO::FETCH_ASSOC);
         return $res;
     }
-    public function pro_listBycat_id2($cat_id)
+    public function bascket_cart_delete($id,$user_id)
     {
-        $this->db->exec("SET CHARACTER SET UTF8");
-        $resualt = $this->db->query("SELECT * FROM `product` WHERE cat_id =$cat_id ");
-        $res = $resualt->fetchall(PDO::FETCH_ASSOC);
-        return $res;
-    }
-    public function pro_list()
-    {
-
-        $resualt = $this->db->query("SELECT * FROM `menu_list` WHERE chid ='0'");
-        $res = $resualt->fetchall(PDO::FETCH_ASSOC);
-        return $res;
-    }
-    public function pro_list1($id)
-    {
-        $this->db->exec("SET CHARACTER SET UTF8");
-        $resualt = $this->db->query("SELECT * FROM `product` WHERE id =$id");
-        $res = $resualt->fetch(PDO::FETCH_ASSOC);
-        return $res;
-    }
-        //------------------------------
-    public function pro_list2()
-    {
-
-        $resualt = $this->db->query("SELECT * FROM `menu_list` ");
-        $res = $resualt->fetchall(PDO::FETCH_ASSOC);
-        return $res;
-    }
-        //------------------------------
-    public function pro_list3()
-    {
-        $this->db->exec("SET CHARACTER SET utf8");
-        $resualt = $this->db->query("SELECT * FROM `product` ");
-        $res = $resualt->fetchall(PDO::FETCH_ASSOC);
-        return $res;
-    }
-        //------------------------------
-    public function pro_list4()
-    {
-
-        $resualt = $this->db->query("SELECT * FROM `menu_list` WHERE chid !='0'");
-        $res = $resualt->fetchall(PDO::FETCH_ASSOC);
-        return $res;
-    }
-    //------------------------------
-    //------------------------------
-    public function pro_delete($id)
-    {
-        $resualt = $this->db->exec("DELETE FROM `product` WHERE id=$id ");
+        $resualt = $this->db->exec("DELETE FROM `bascket_cart` WHERE id=$id");
         return $resualt;
     }
-        //------------------------------
-    public function pro_edit($data, $image, $id)
+    public function bascket_cart_pay()
     {
-        $this->db->exec("SET CHARACTER SET utf8");
-        $resualt = $this->db->exec("UPDATE `product` SET 
-       tittle='$data[name]',image1='$image[0]',image2='$image[1]'
-       ,image1='$image[2]',cat_id='$data[cat_id]',price='$data[price]'
-       ,count='$data[count]',detials='$data[detials]' WHERE id=$id");
-        return $resualt;
-    }
-    //------------------------------
-    public function pro_editList($id)
-    {
-        $this->db->exec("set character set utf8");
-        $resualt = $this->db->query("SELECT * FROM `product` WHERE id=$id ");
+
+        $resualt = $this->db->query("SELECT * FROM `bascket_cart` WHERE status=1");
         $res = $resualt->fetchall(PDO::FETCH_ASSOC);
         return $res;
     }
-}
+    public function bascket_cart_dontpay()
+    {
+
+        $resualt = $this->db->query("SELECT * FROM `bascket_cart` WHERE status=0");
+        $res = $resualt->fetchall(PDO::FETCH_ASSOC);
+        return $res;
+    }
+    //=*************************************************
+  

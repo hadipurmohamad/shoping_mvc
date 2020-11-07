@@ -321,6 +321,17 @@
                             <li><a class="" href="index.php?c=pro&a=show">نمایش محصولات</a></li>
                         </ul>
                     </li>
+                    <li class="sub-menu">
+                        <a href="javascript:;" class="">
+                            <i class="icon-product"></i>
+                            <span>سبد خرید</span>
+                            <span class="arrow"></span>
+                        </a>
+                        <ul class="sub">
+                            <li><a class="" href="index.php?c=bascket&a=pay">پرداخت شده</a></li>
+                            <li><a class="" href="index.php?c=bascket&a=dontpay">درانتظار پرداخت</a></li>
+                        </ul>
+                    </li>
                 </ul>
                 <!-- sidebar menu end-->
             </div>
