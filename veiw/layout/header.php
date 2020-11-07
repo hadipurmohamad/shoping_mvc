@@ -214,7 +214,7 @@
                                     <?php foreach ($res2 as $key => $value2) : ?>
                                         <?php if ($value['id'] == $value2['chid']) : ?>
                                             <ul class="dropdown">
-                                                <li><a href="#" title="Product Grid"><?php echo $value2['tittle'] ?></a></li>
+                                                <li><a href="index.php?c=product&a=list&procat_id=<?php echo $value2['id'] ?>" title="Product Grid"><?php echo $value2['tittle'] ?></a></li>
 
                                             </ul>
                                         <?php endif; ?>

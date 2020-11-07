@@ -33,11 +33,15 @@
                                  <label for="firstname" class="control-label col-lg-2">دسته</label>
                                  <div class="col-lg-10">
                                      <select name="frm[cat_id]" class="form-control input-sm m-bot15">
-
                                          <?php foreach ($res as $key => $value) : ?>
-                                             <option value="<?php echo $value['id']; ?>"><?php echo $value['tittle']; ?></option>
+                                             <option value="<?php echo $value['id']; ?>"><?php echo $value['tittle']; ?>---<?php
+                                             foreach ($res2 as $key => $value2) {
+                                                 if ($value2['id']==$value['chid']) {
+                                                   echo $value2['tittle']; 
+                                                }
+                                             }
+                                             ?></option>
                                          <?php endforeach; ?>
-
                                      </select>
                                  </div>
                              </div>

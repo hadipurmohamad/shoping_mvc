@@ -6,12 +6,32 @@ class pro extends main {
         global $db;
         $this->db = $db;
     }
-
+    public function pro_listBycat_id($cat_id,$id)
+    {
+        $this->db->exec("SET CHARACTER SET UTF8");
+        $resualt = $this->db->query("SELECT * FROM `product` WHERE cat_id =$cat_id and id!=$id");
+        $res = $resualt->fetchall(PDO::FETCH_ASSOC);
+        return $res;
+    }
+    public function pro_listBycat_id2($cat_id)
+    {
+        $this->db->exec("SET CHARACTER SET UTF8");
+        $resualt = $this->db->query("SELECT * FROM `product` WHERE cat_id =$cat_id ");
+        $res = $resualt->fetchall(PDO::FETCH_ASSOC);
+        return $res;
+    }
     public function pro_list()
     {
 
         $resualt = $this->db->query("SELECT * FROM `menu_list` WHERE chid ='0'");
         $res = $resualt->fetchall(PDO::FETCH_ASSOC);
+        return $res;
+    }
+    public function pro_list1($id)
+    {
+        $this->db->exec("SET CHARACTER SET UTF8");
+        $resualt = $this->db->query("SELECT * FROM `product` WHERE id =$id");
+        $res = $resualt->fetch(PDO::FETCH_ASSOC);
         return $res;
     }
     public function pro_list2()

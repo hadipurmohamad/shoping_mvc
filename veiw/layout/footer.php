@@ -136,28 +136,20 @@
 	<script src="public/defualt/javascripts/zoomsl-3.0.min.js"></script>
 	<script>
 		jQuery(function() {
-
 			$(".p-photo").imagezoomsl({
-
-
 				zoomrange: [1.68, 10],
 				zoomstart: 1.68,
 				cursorshadeborder: "10px solid black",
 				magnifiereffectanimate: "fadeIn",
 			});
-
-
 			$(".item img").click(function() {
-
 				var that = this;
 				$(".p-photo").fadeOut(600, function() {
-
 					$(this).attr("src", $(that).attr("data-medium"))
 						.attr("data-large", $(that).attr("data-tmb-large"))
 						.fadeIn(1000);
 				});
-
-				return false;
+			return false;
 			});
 
 		});

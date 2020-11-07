@@ -13,6 +13,7 @@ if ($_GET['a']) {
         case 'added':
             $class = new pro();
             $res = $class->pro_list4();
+            $res2 = $class->pro_list();
             break;
         case 'add':
             $class = new pro();
@@ -43,7 +44,7 @@ if ($_GET['a']) {
             break;
         case 'edit':
             $class = new pro();
-            $res = $class->pro_list();
+            $res = $class->pro_list4();
              $edit_id;
             if (isset($_GET['id'])) {
                 $edit_id = $_GET['id'];
